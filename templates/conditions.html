@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: cadetblue;">
+    <center>
+
+        <h1 style="color: rgb(255, 175, 47);"><i>If conditional statements</i></h1>
+
+        {% if a < b %}
+            <h1>B is greater then a</h1>
+        {% endif %}
+
+
+        <h1 style="color: greenyellow;"><i>If else conditional statements</i></h1>
+
+        {% if a > b %}
+            <h1>A is greater then B</h1>
+
+        {% else %}
+            <h1>B is greater then A</h1>
+            
+        {% endif %}
+
+
+
+        <h1 style="color: rgb(47, 189, 255);"><i>If, else, elif conditional statements</i></h1>
+
+        {% if a > b and a > c %}
+            <h1>a is greater then b,c</h1>
+
+        {% elif b > c %}
+            <h1>b is greater then a,c</h1>
+
+        {% else %}
+        <h1>c is greater then a,b</h1>
+
+        {% endif%}
+
+        <h1 style="color: blue;"><i>Nested if conditional statements</i></h1>
+
+        {% if a > b %}
+            {% if a > c%}
+                <h1>a is highest value</h1>
+            {% else %}
+                <h1>c is highest value</h1>
+            {% endif %}
+
+         {% else %}
+            {% if B > c %}
+                <h1>b is highest value</h1>
+            {% else %}
+                <h1>c is highest value</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
